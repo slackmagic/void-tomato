@@ -1,15 +1,15 @@
 use crate::tasks::Task;
 
-pub struct Pomodoro {
+pub struct Engine {
     pause_length: u8,
     pause_long_length: u8,
     pause_steps: u8,
     tasks: Vec<Task>,
 }
 
-impl Pomodoro {
-    pub fn new(pause_length: u8, pause_steps: u8, pause_long_length: u8) -> Pomodoro {
-        Pomodoro {
+impl Engine {
+    pub fn new(pause_length: u8, pause_steps: u8, pause_long_length: u8) -> Engine {
+        Engine {
             pause_length,
             pause_steps,
             pause_long_length,
@@ -22,6 +22,6 @@ impl Pomodoro {
     }
 
     pub fn start() {
-        println!("Pomodoro started!");
+        println!("Engine started!");
     }
 }

@@ -1,5 +1,6 @@
-use void_tomato_lib::pomodoro::Pomodoro;
+use void_tomato_lib::timer;
 
-fn main() {
-    println!("Hello, world!");
+#[tokio::main]
+async fn main() {
+    timer::start().await;
 }
