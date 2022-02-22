@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 void-tomato-lib = {path = "../../void-tomato-lib"}
 tokio = {version ="1.17.0",  features = ["full"] }
+notify-rust = "4.5.6"
