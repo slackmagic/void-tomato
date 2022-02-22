@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "bin/void-tomato-ui",
+    "void-tomato-lib"
+]
+
+##DEFAULT RUNNING BIN
+default-members=["bin/void-tomato-ui"]
+
+
+##__FIX FOR ARM COMPILATION SINCE RUST 1.38
+[profile.release]
+codegen-units = 1
